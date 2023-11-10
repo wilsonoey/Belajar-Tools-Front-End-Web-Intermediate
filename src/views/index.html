@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Edible Practical Eel</title>
+    <meta property="og:title" content="Edible Practical Eel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <link type="text/css" href="../sass/style.scss" />
+    <div>
+      <div class="home-container">
+        <div class="home-header">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <span class="home-logo">STORYAPP</span>
+            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+              <nav class="add-page-links">
+                <links-appbar class="home-links"></links-appbar>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div class="home-nav">
+                <div class="home-top">
+                  <span class="home-logo1">STORYAPP</span>
+                  <div data-thq="thq-close-menu" class="home-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="home-links1">
+                  <a href="/"> <span class="home-nav11">DashboardPage</span> </a>
+                  <a href="add-page.html"> <span class="home-nav21">AddPage</span> </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="home-banner">
+          <div class="home-banner1">
+            <h1 class="home-banner-heading heading2">
+              Introducing our Story Application
+            </h1>
+            <span class="home-banner-sub-heading">
+              Easily create and organize your stories with our user-friendly
+              application.
+            </span>
+            <button class="btn home-banner-button button">Learn More</button>
+          </div>
+        </div>
+        <div class="home-gallery">
+          <div class="home-gallery1">
+            <h1 class="home-gallery-heading heading2">Gallery</h1>
+            <span class="home-gallery-sub-heading">
+              Explore some of the stories created using our application
+            </span>
+            <div class="home-container1">
+              <listitem-component 
+                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+                image="${storyRecord.photoUrl}"
+                name="${storyRecord.name}"
+                description="${storyRecord.description}"
+                createdAt="${date}"
+              ></listitem-component>
+            </div>
+          </div>
+        </div>
+        <footer-component class="home-footer"></footer-component>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
