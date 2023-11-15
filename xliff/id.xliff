@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file target-language="id" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+    <body>
+      <trans-unit id="sef49b2c68fd1e332">
+        <source>Introducing our Story Application</source>
+        <target>Memperkenalkan Aplikasi Story kami</target>
+      </trans-unit>
+      <trans-unit id="s749c72374d54863f">
+        <source>Easily create and organize your stories with our user-friendly application</source>
+        <target>Buat dan atur cerita Anda dengan mudah menggunakan aplikasi kami yang ramah pengguna</target>
+      </trans-unit>
+      <trans-unit id="sf9a862bfd829397e">
+        <source>Learn More</source>
+        <target>Lebih Lanjut</target>
+      </trans-unit>
+      <trans-unit id="s0832aaca8cfaacf2">
+        <source>Gallery</source>
+        <target>Galeri</target>
+      </trans-unit>
+      <trans-unit id="s772ce5f935d58e37">
+        <source>Explore some of the stories created using our application</source>
+        <target>Jelajahi beberapa cerita yang dibuat menggunakan aplikasi kami</target>
+      </trans-unit>
+      <trans-unit id="sfae357d460dcc835">
+        <source>© 2023 myCompany, All Rights Reserved.</source>
+        <target>© 2023 myCompany, Hak Cipta dilindungi Undang-undang.</target>
+      </trans-unit>
+      <trans-unit id="sfae357d460dcc876">
+        <source>Add Story</source>
+        <target>Tambah Cerita</target>
+      </trans-unit>
+      <trans-unit id="sfae357d460dcc878">
+        <source>Photo</source>
+        <target>Foto</target>
+      </trans-unit>
+      <trans-unit id="sfae357d460dcc812">
+        <source>Name</source>
+        <target>Nama</target>
+      </trans-unit>
+      <trans-unit id="sfae357d460dcc818">
+        <source>Description</source>
+        <target>Deskripsi</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

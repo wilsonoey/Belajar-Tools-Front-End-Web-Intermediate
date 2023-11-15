@@ -1,0 +1,48 @@
+@use 'style.scss' as var;
+@include var.baseui;
+
+.not-found-container {
+  @include var.notfound;
+  width: 100%;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.not-found-container1 {
+  @include var.notfound;
+  position: relative;
+}
+
+.not-found-text1 {
+  color: rgb(38, 38, 38);
+  font-size: 252px;
+  margin-top: -20px;
+  font-weight: 900;
+  margin-bottom: -20px;
+  letter-spacing: -20px;
+}
+
+.not-found-container2 {
+  @include var.notfound;
+  width: 421px;
+}
+
+.not-found-text2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.return-button {
+  transition: 0.3s !important;
+  font-weight: 700;
+  padding-top: 0.5rem !important;
+  border-width: 5px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 0.5rem !important;
+  margin-top: 10px;
+
+  &:hover {
+    @include var.hover;
+  }
+}
