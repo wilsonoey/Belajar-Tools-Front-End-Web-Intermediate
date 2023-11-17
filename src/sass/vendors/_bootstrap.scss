@@ -1,0 +1,82 @@
+// ==================================================
+// Bootstrap
+// ==================================================
+
+// Using built-in modules
+@use 'sass:map';
+
+// Custom modules
+@use '../vendors-extensions/bootstrap/components/buttons' as btn;
+@use '../vendors-extensions/bootstrap/components/cards' as card;
+@use '../vendors-extensions/bootstrap/components/close' as btn-close;
+@use '../vendors-extensions/bootstrap/components/forms' as input-btn;
+@use '../vendors-extensions/bootstrap/components/dropdown' as dropdown;
+
+//
+// Functions Bootstrap
+//
+@import '~bootstrap/scss/functions';
+
+//
+// Variables Bootstrap
+//
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
+
+// Menerapkan/override variables Bootstrap apa pun di sini
+
+// Buttons
+$btn-padding-x: btn.$padding-x;
+$btn-padding-y: btn.$padding-y;
+$btn-transition: btn.$transition;
+
+// Cards
+$card-border-radius: card.$border-radius;
+$card-inner-border-radius: card.$inner-border-radius;
+
+// Close
+$btn-close-opacity: btn-close.$opacity;
+$btn-close-hover-opacity: btn-close.$hover-opacity;
+
+// Forms
+$input-btn-padding-y: input-btn.$padding-y;
+$input-btn-padding-x: input-btn.$padding-x;
+
+// Dropdown
+$dropdown-border-color: dropdown.$border-color;
+$dropdown-border-width: dropdown.$border-radius;
+
+//
+// Konfigurasi Bootstrap
+//
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/reboot';
+
+//
+// Layouts dan components
+//
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+
+@import '~bootstrap/scss/helpers';
+
+// Komponen-Komponen
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/dropdown';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/close';
+
+//
+// Utilities API untuk menghasilkan utility classes
+//
+@import '~bootstrap/scss/utilities/api';
+
+//
+// Tambahkan custom code di sini
+//
