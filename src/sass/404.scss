@@ -33,17 +33,14 @@
 }
 
 .return-button {
-  color: var.$color-primary1-blue100;
-  transition: 0.3s;
+  transition: 0.3s !important;
   font-weight: 700;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem !important;
   border-width: 5px;
   padding-left: 3rem;
-  border-radius: 45px;
   padding-right: 3rem;
-  padding-bottom: 1.5rem;
-  background-color: var.$color-gray-white;
-  border-color: var.$color-primary1-blue100;
+  padding-bottom: 0.5rem !important;
+  margin-top: 10px;
 
   &:hover {
     @include var.hover;

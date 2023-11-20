@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="cn" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="s7fee95b66225e1fb">
+  <source>Dashboard</source>
+  <target>仪表板</target>
+</trans-unit>
+<trans-unit id="s1f30f2eaf1e38fb9">
+  <source>Add Story</source>
+  <target>添加故事</target>
+</trans-unit>
+<trans-unit id="s80cfc1ae5a588ab8">
+  <source>© 2023 myCompany, All Rights Reserved.</source>
+  <target>© 2023 myCompany，保留所有权利。</target>
+</trans-unit>
+<trans-unit id="sf1a78dd2508964c3">
+  <source>Photo</source>
+  <target>照片</target>
+</trans-unit>
+<trans-unit id="s72dc4aff9d9092e7">
+  <source>Please upload a photo</source>
+  <target>请上传照片</target>
+</trans-unit>
+<trans-unit id="sef49aec68fd1dc66">
+  <source>Name</source>
+  <target>名称</target>
+</trans-unit>
+<trans-unit id="s644b5c0ae2dee067">
+  <source>Example: Wilson</source>
+  <target>例如：Wilson</target>
+</trans-unit>
+<trans-unit id="s059d391cd4966b82">
+  <source>Please complete this field</source>
+  <target>请填写此字段</target>
+</trans-unit>
+<trans-unit id="s63d894b1ddb06289">
+  <source>Description</source>
+  <target>描述</target>
+</trans-unit>
+<trans-unit id="s942e10915f41815e">
+  <source>Example: Wilson is good</source>
+  <target>例如：Wilson很好</target>
+</trans-unit>
+<trans-unit id="sb3d4f79d9d8b71e5">
+  <source>Submit</source>
+  <target>提交</target>
+</trans-unit>
+<trans-unit id="se15e5318306cee20">
+  <source>Data added successfully</source>
+  <target>数据添加成功</target>
+</trans-unit>
+<trans-unit id="s40a4c375c7205b51">
+  <source>OOPS! PAGE NOT FOUND</source>
+  <target>糟糕！找不到页面</target>
+</trans-unit>
+<trans-unit id="saa1f41ecae4a7112">
+  <source>WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND</source>
+  <target>很抱歉，但您请求的页面未找到</target>
+</trans-unit>
+<trans-unit id="sc16e00a7a8b2fde2">
+  <source>Back</source>
+  <target>背部</target>
+</trans-unit>
+<trans-unit id="sd19b529ff81b9828">
+  <source>Introducing our Story Application</source>
+  <target>介绍我们的故事应用程序</target>
+</trans-unit>
+<trans-unit id="s1b99042f480ea979">
+  <source>Easily create and organize your stories with our user-friendly application.</source>
+  <target>使用我们的用户友好型应用程序轻松创建和组织您的故事。</target>
+</trans-unit>
+<trans-unit id="s0763aeb5be71575a">
+  <source>Learn More</source>
+  <target>了解更多</target>
+</trans-unit>
+<trans-unit id="s1e3a08abb66683bd">
+  <source>Gallery</source>
+  <target>画廊</target>
+</trans-unit>
+<trans-unit id="s09442466870144fb">
+  <source>Explore some of the stories created using our application</source>
+  <target>探索使用我们的应用程序创建的一些故事</target>
+</trans-unit>
+<trans-unit id="sb59d68ed12d46377">
+  <source>Loading</source>
+  <target>加载中</target>
+</trans-unit>
+<trans-unit id="sc8da3cc71de63832">
+  <source>Login</source>
+  <target>登录</target>
+</trans-unit>
+<trans-unit id="s2c15b9b13a3e2a80">
+  <source>Register</source>
+  <target>登记</target>
+</trans-unit>
+<trans-unit id="s58267a09d1391646">
+  <source>Login StoryApp</source>
+  <target>登录 StoryApp</target>
+</trans-unit>
+<trans-unit id="sd1f44f1a8bc20e67">
+  <source>Email</source>
+  <target>电子邮件</target>
+</trans-unit>
+<trans-unit id="s0f02a0421cdb1c6a">
+  <source>Example: tester@test.tes</source>
+  <target>例如：tester@test.tes</target>
+</trans-unit>
+<trans-unit id="sf6e1665c7022a1f8">
+  <source>Password</source>
+  <target>密码</target>
+</trans-unit>
+<trans-unit id="sa0211df274180076">
+  <source>Example: Password0</source>
+  <target>示例：密码0</target>
+</trans-unit>
+<trans-unit id="s7fbc79601b10256c">
+  <source>Register StoryApp</source>
+  <target>注册 StoryApp</target>
+</trans-unit>
+<trans-unit id="s67749057edb2586b">
+  <source>Logout</source>
+  <target>登出</target>
+</trans-unit>
+<trans-unit id="s6abb1cd87fe0114e">
+  <source>Home</source>
+  <target>家</target>
+</trans-unit>
+<trans-unit id="sb39e929c85fd7f6e">
+  <source>Add Story for Guest</source>
+  <target>为客人添加故事</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

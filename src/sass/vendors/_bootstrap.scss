@@ -2,6 +2,17 @@
 // Bootstrap
 // ==================================================
 
+// Using built-in modules
+@use 'sass:map';
+
+// Custom modules
+@use '../vendors-extensions/bootstrap/components/buttons' as btn;
+@use '../vendors-extensions/bootstrap/components/cards' as card;
+@use '../vendors-extensions/bootstrap/components/close' as btn-close;
+@use '../vendors-extensions/bootstrap/components/forms' as input-btn;
+@use '../vendors-extensions/bootstrap/components/dropdown' as dropdown;
+@use '../vendors-extensions/bootstrap/components/alert' as alert;
+
 //
 // Functions Bootstrap
 //
@@ -11,8 +22,38 @@
 // Variables Bootstrap
 //
 @import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
 
 // Menerapkan/override variables Bootstrap apa pun di sini
+
+// Buttons
+$btn-padding-x: btn.$padding-x;
+$btn-padding-y: btn.$padding-y;
+$btn-transition: btn.$transition;
+
+// Cards
+$card-border-radius: card.$border-radius;
+$card-inner-border-radius: card.$inner-border-radius;
+
+// Close
+$btn-close-opacity: btn-close.$opacity;
+$btn-close-hover-opacity: btn-close.$hover-opacity;
+
+// Forms
+$input-btn-padding-y: input-btn.$padding-y;
+$input-btn-padding-x: input-btn.$padding-x;
+
+// Dropdown
+$dropdown-border-color: dropdown.$border-color;
+$dropdown-border-width: dropdown.$border-radius;
+
+//Alert
+$alert-padding-y: alert.$padding-y;
+$alert-padding-x: alert.$padding-x;
+$alert-margin-bottom: alert.$margin-bottom;
+$alert-border-radius: alert.$border-radius;
+$alert-link-font-weight: alert.$link-font-weight;
+$alert-border-width: alert.$border-width;
 
 //
 // Konfigurasi Bootstrap
@@ -34,17 +75,12 @@
 @import '~bootstrap/scss/helpers';
 
 // Komponen-Komponen
-@import '~bootstrap/scss/tables';
 @import '~bootstrap/scss/forms';
 @import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/transitions';
-@import '~bootstrap/scss/transitions';
 @import '~bootstrap/scss/dropdown';
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar'; // Requires nav
 @import '~bootstrap/scss/card';
 @import '~bootstrap/scss/close';
-@import '~bootstrap/scss/modal'; // Requires transitions
+@import '~bootstrap/scss/alert';
 
 //
 // Utilities API untuk menghasilkan utility classes

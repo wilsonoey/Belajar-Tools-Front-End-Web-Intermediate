@@ -4,6 +4,19 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  devServer: {
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/$/, to: '/index.html' },
+        { from: /^\/addpage.html/, to: '/addpage.html' },
+        { from: /^\/addpageforguest.html/, to: '/addpageforguest.html' },
+        { from: /^\/login.html/, to: '/login.html' },
+        { from: /^\/register.html/, to: '/register.html' },
+        { from: /^\/dashboard.html/, to: '/dashboard.html' },
+        { from: /./, to: '/404.html' },
+      ],
+    },
+  },
   entry: {
     app: path.resolve(__dirname, 'src/js/index.js'),
   },
@@ -44,8 +57,24 @@ module.exports = {
       template: path.resolve(__dirname, 'src/views/index.html'),
     }),
     new HtmlWebpackPlugin({
-      filename: 'add-page.html',
-      template: path.resolve(__dirname, 'src/views/add-page.html'),
+      filename: 'addpage.html',
+      template: path.resolve(__dirname, 'src/views/addpage.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'addpageforguest.html',
+      template: path.resolve(__dirname, 'src/views/addpageforguest.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: path.resolve(__dirname, 'src/views/login.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'register.html',
+      template: path.resolve(__dirname, 'src/views/register.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'dashboard.html',
+      template: path.resolve(__dirname, 'src/views/dashboard.html'),
     }),
     new HtmlWebpackPlugin({
       filename: '404.html',
