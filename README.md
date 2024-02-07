@@ -3,7 +3,7 @@
 # Story App
 
 ## Background
-Story App is an application that is used to share stories with account owners who have already created and login into [this] application (https://storyapp-409f8.web.app/login.html).
+Story App is an application that is used to share stories with account owners who have already created and login into [this](https://storyapp-409f8.web.app/login.html) application.
 
 ## Technology
 The technology used to create this application is as follows:
@@ -13,7 +13,7 @@ The technology used to create this application is as follows:
 -   To find out other *packages* used to create applications, you can see [package.json](https://github.com/wilsonoey60/Belajar-Tools-Front-End-Web-Intermediate/blob/submission-2/ package.json)
 
 ## Feature
--   Stories publicly without logging in using data originating from [JSON](https://github.com/wilsonoey60/Belajar-Tools-Front-End-Web-Intermediate/blob/submission-2/src/public/data /data.json)
+-   Stories publicly without logging in using data originating from [JSON](https://github.com/wilsonoey60/Belajar-Tools-Front-End-Web-Intermediate/blob/submission-2/src/public/data/data.json)
 -   Register
 -   Login
 -   Dashboard uses data coming from [API](https://story-api.dicoding.dev/v1/#/)
