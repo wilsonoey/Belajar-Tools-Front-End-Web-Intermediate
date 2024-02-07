@@ -7,7 +7,7 @@ Story App is an application that is used to share stories with account owners wh
 
 ## Technology
 The technology used to create this application is as follows:
--   For appearance, I used the [TeleportHQ](https://teleporthq.io) application template then converted it into code using **HTML** and **CSS** then I restructured **HTML** and replaced **CSS ** becomes **SCSS** for **Bootstrap** customization
+-   For appearance, I used the [TeleportHQ](https://teleporthq.io) application template then converted it into code using **HTML** and **CSS** then I restructured **HTML** and replaced **CSS** becomes **SCSS** for **Bootstrap** customization
 -   To display content coming from the API, I use **Axios**
 -   For the language change feature, I use `@lit/localize-tools`
 -   To find out other *packages* used to create applications, you can see [package.json](https://github.com/wilsonoey60/Belajar-Tools-Front-End-Web-Intermediate/blob/submission-2/ package.json)
