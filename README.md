@@ -3,7 +3,7 @@
 # Story App
 
 ## Background
-Story App is an application that is used to share stories with account owners who have already created and login into [this](https://storyapp-409f8.web.app/login.html) application.
+Story App is an application that is used to share stories with account owners who have already created.
 
 ## Technology
 The technology used to create this application is as follows:
@@ -26,7 +26,7 @@ The technology used to create this application is as follows:
 # Story App
 
 ## Latar belakang
-Story App adalah sebuah aplikasi yang digunakan untuk berbagi cerita kepada pemilik akun yang sudah pernah buat dan *login* pada aplikasi [ini](https://storyapp-409f8.web.app/login.html).
+Story App adalah sebuah aplikasi yang digunakan untuk berbagi cerita kepada pemilik akun yang sudah pernah buat.
 
 ## Teknologi
 Teknologi yang digunakan untuk membuat aplikasi ini sebagai berikut:
