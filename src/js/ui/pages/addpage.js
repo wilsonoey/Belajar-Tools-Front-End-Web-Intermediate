@@ -16,6 +16,7 @@ const AddPage = {
       (event) => {
         event.preventDefault();
         event.stopPropagation();
+        addFormRecord.classList.add('was-validated');
         this._sendPost();
       },
       false,
@@ -23,26 +24,44 @@ const AddPage = {
   },
 
   _getFormData() {
+    const evidenceInput = document.querySelector('#validationCustomEvidence');
     const nameInput = document.querySelector('#name-input');
     const descriptionInput = document.querySelector('#description-input');
+    var date = new Date().toISOString();
     return {
       id: `story-${Math.random().toString(18).substring(2, 18)}`,
       name: nameInput.value,
       description: descriptionInput.value,
+      photoUrl: evidenceInput.files[0],
+      createdAt: date,
     };
   },
 
-  _sendPost() {
+  async _sendPost() {
     const formData = this._getFormData();
     if (this._validateFormData({ ...formData })) {
-      console.log('formData');
-      console.log(formData);
+      const photoUrl = await this._getBase64(formData.photoUrl);
+      const data = {
+        ...formData,
+        photoUrl,
+      };
+      localStorage.setItem('myStory', JSON.stringify(data));
+      this._goToDashboardPage();
     }
   },
 
   _validateFormData(formData) {
     const formDataFiltered = Object.values(formData).filter((item) => item === '');
     return formDataFiltered.length === 0;
+  },
+
+  _getBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = error => reject(error);
+    });
   },
 
   _goToDashboardPage() {

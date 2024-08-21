@@ -1,4 +1,4 @@
-const showFormattedDateTime = (date) => {
+const showFormattedDateTime = (timezone, date) => {
   const options = {
     weekday: 'long',
     day: 'numeric',
@@ -10,7 +10,7 @@ const showFormattedDateTime = (date) => {
     timeZoneName: 'short',
     hour12: false,
   };
-  return new Date(date).toLocaleDateString('id-ID', options);
+  return new Date(date).toLocaleDateString(timezone, options);
 };
    
 export { showFormattedDateTime };

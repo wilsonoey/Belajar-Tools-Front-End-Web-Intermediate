@@ -20,16 +20,14 @@ class ListItemApp extends LitWithoutShadowDom {
   }
   
   render() {
-    console.log(this.name);
     return html`
-        <img
-          alt="image"
-          src="${this.image}"
-          class="gallery-card3-image"
-        />
+      <img alt="image" src="${this.image}" class="card-img-top"/>
+      <div class="card-body">
         <span class="gallery-card3-text"><span>${this.name}</span></span>
         <span class="gallery-card3-text"><span>${this.description}</span></span>
         <span class="gallery-card3-text"><span>${this.createdAt}</span></span>
+      </div>
+      
     `;
   }
 }

@@ -16,7 +16,7 @@
 }
 
 .input-component-textinput {
-  width: 500px;
+  width: 500px !important;
   align-self: flex-start;
   transition: 0.3s;
   margin-bottom: 10px;
@@ -26,7 +26,7 @@
   }
 
   &:active {
-    border-color: red;
+    border-color: rgba(97, 85, 141, 0.9);
     border-width: 5px;
   }
 }
@@ -101,10 +101,11 @@
 }
 
 .form-input-container {
-  @include var.fullflexwithcentercolumn;
-  height: 400px;
-  position: relative;
-  justify-content: center;
+  @include var.columncenter;
+  display: flex !important;
+  margin: 20px 20px;
+  position: relative !important;
+  justify-content: center !important;
 }
 
 .form-input-text {
@@ -118,16 +119,14 @@
 
 .form-input-hero-button1 {
   color: var.$color-primary1-blue100;
-  font-size: 18px;
-  transition: 0.3s;
-  font-weight: bold;
-  padding-top: 1.5rem;
-  border-color: var.$color-primary1-blue100;
-  border-width: 5px;
-  padding-left: 3rem;
-  border-radius: 45px;
-  padding-right: 3rem;
-  padding-bottom: 1.5rem;
+  font-size: 18px !important;
+  transition: 0.3s !important;
+  font-weight: bold !important;
+  border-color: var.$color-primary1-blue100 !important;
+  border-width: 5px !important;
+  padding-left: 3rem !important;
+  border-radius: 45px !important;
+  padding-right: 3rem !important;
 
   &:hover {
     @include var.hover;
@@ -204,12 +203,6 @@
   display: none;
 }
 
-.add-page-icon {
-  width: var.$size-xsmall;
-  cursor: pointer;
-  height: var.$size-xsmall;
-}
-
 .add-page-mobile-menu {
   top: 0px;
   left: 0px;
@@ -245,13 +238,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.add-page-icon02 {
-  fill: var.$color-gray-900;
-  width: var.$size-xsmall;
-  cursor: pointer;
-  height: var.$size-xsmall;
 }
 
 .add-page-links1 {
@@ -476,10 +462,6 @@
 
   .add-page-logo1 {
     font-size: 1.5em;
-  }
-
-  .add-page-icon02 {
-    fill: var.$color-gray-900;
   }
 
   .add-page-footer1 {

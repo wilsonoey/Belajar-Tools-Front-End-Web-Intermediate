@@ -8,6 +8,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  
+  &:hover {
+    @include var.hover;
+  }
 }
 
 .gallery-card3-image {
@@ -28,7 +32,6 @@
   flex-direction: column;
   padding: 1px;
   gap: 0.5rem;
-  background-color: antiquewhite;
 }
 
 .home-container {
@@ -101,12 +104,6 @@
   display: none;
 }
 
-.home-icon {
-  width: var.$size-xsmall;
-  cursor: pointer;
-  height: var.$size-xsmall;
-}
-
 .home-mobile-menu {
   top: 0px;
   left: 0px;
@@ -142,13 +139,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.home-icon02 {
-  fill: var.$color-gray-900;
-  width: var.$size-xsmall;
-  cursor: pointer;
-  height: var.$size-xsmall;
 }
 
 .home-links1 {
@@ -246,16 +236,13 @@
 }
 
 .home-banner-button {
-  color: var.$color-gray-white;
-  transition: 0.3s;
-  font-weight: 700;
-  padding-top: 1.5rem;
-  border-width: 0px;
-  padding-left: 3rem;
-  border-radius: 45px;
-  padding-right: 3rem;
-  padding-bottom: 1.5rem;
-  background-color: var.$color-primary1-blue100;
+  color: var.$color-primary1-blue100 !important;
+  font-weight: 700 !important;
+  border-width: 0px !important;
+  padding-left: 3rem !important;
+  border-radius: 45px !important;
+  padding-right: 3rem !important;
+  background-color: var.$color-gray-white !important;
 
   &:hover {
     @include var.hover;
@@ -394,14 +381,14 @@
 }
 
 .home-icon10 {
-  fill: var.$color-secondary-gray500;
+  color: var.$color-secondary-gray500;
   width: 24px;
   height: 24px;
   margin-right: var.$space-twounits;
 }
 
 .home-icon12 {
-  fill: var.$color-secondary-gray500;
+  color: var.$color-secondary-gray500;
   width: 24px;
   height: 24px;
 }
@@ -503,10 +490,6 @@
 
   .home-mobile-menu {
     padding: 16px;
-  }
-
-  .home-icon02 {
-    fill: var.$color-gray-900;
   }
 
   .home-banner1 {

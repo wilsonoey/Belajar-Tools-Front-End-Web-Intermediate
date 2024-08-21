@@ -17,26 +17,24 @@
             <div data-thq="thq-navbar-nav" class="home-desktop-menu">
               <nav class="add-page-links">
                 <links-appbar class="home-links"></links-appbar>
+                <locale-picker class="dropdown"></locale-picker>
               </nav>
             </div>
             <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <span class="glyphicon glyphicon-menu-hamburger"></span>
+              <i class="bi bi-list"></i>
             </div>
             <div data-thq="thq-mobile-menu" class="home-mobile-menu">
               <div class="home-nav">
                 <div class="home-top">
                   <span class="home-logo1">STORYAPP</span>
-                  <div data-thq="thq-close-menu" class="home-close-menu">
-                    <svg viewBox="0 0 1024 1024" class="home-icon02">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
+                  <div data-thq="thq-close-menu" class="home-close-menu btn-close">
+                    <i class="bi bi-x"></i>
                   </div>
                 </div>
                 <nav class="home-links1">
-                  <a href="/"> <span class="home-nav11">DashboardPage</span> </a>
-                  <a href="add-page.html"> <span class="home-nav21">AddPage</span> </a>
+                  <a href="/"> <span class="home-nav11">Dashboard</span> </a>
+                  <a href="add-page.html"> <span class="home-nav21">Add Story</span> </a>
+                  <locale-picker class="dropdown"></locale-picker>
                 </nav>
               </div>
             </div>
@@ -51,7 +49,7 @@
               Easily create and organize your stories with our user-friendly
               application.
             </span>
-            <button class="btn home-banner-button button">Learn More</button>
+            <button class="btn home-banner-button">Learn More</button>
           </div>
         </div>
         <div class="home-gallery">
@@ -62,7 +60,7 @@
             </span>
             <div class="home-container1">
               <listitem-component 
-                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+                class="card m-3 gallery-card3-gallery-card"
                 image="${storyRecord.photoUrl}"
                 name="${storyRecord.name}"
                 description="${storyRecord.description}"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="id" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="s7fee95b66225e1fb">
+  <source>Dashboard</source>
+  <target>Beranda</target>
+</trans-unit>
+<trans-unit id="s1f30f2eaf1e38fb9">
+  <source>Add Story</source>
+  <target>Tambah Cerita</target>
+</trans-unit>
+<trans-unit id="s80cfc1ae5a588ab8">
+  <source>© 2023 myCompany, All Rights Reserved.</source>
+  <target>© 2023 myCompany, Hak cipta dilindungi.</target>
+</trans-unit>
+<trans-unit id="s088e3807b53946aa">
+  <source>en</source>
+  <target>id-ID</target>
+</trans-unit>
+<trans-unit id="sf1a78dd2508964c3">
+  <source>Photo</source>
+  <target>Foto</target>
+</trans-unit>
+<trans-unit id="s72dc4aff9d9092e7">
+  <source>Please upload a photo</source>
+  <target>Silakan unggah foto</target>
+</trans-unit>
+<trans-unit id="sef49aec68fd1dc66">
+  <source>Name</source>
+  <target>Nama</target>
+</trans-unit>
+<trans-unit id="s644b5c0ae2dee067">
+  <source>Example: Wilson</source>
+  <target>Contoh: Wilson</target>
+</trans-unit>
+<trans-unit id="s059d391cd4966b82">
+  <source>Please complete this field</source>
+  <target>Silakan lengkapi kolom ini</target>
+</trans-unit>
+<trans-unit id="s63d894b1ddb06289">
+  <source>Description</source>
+  <target>Deskripsi</target>
+</trans-unit>
+<trans-unit id="s942e10915f41815e">
+  <source>Example: Wilson is good</source>
+  <target>Contoh: Wilson adalah bagus</target>
+</trans-unit>
+<trans-unit id="sb3d4f79d9d8b71e5">
+  <source>Submit</source>
+  <target>Kirim</target>
+</trans-unit>
+<trans-unit id="s40a4c375c7205b51">
+  <source>OOPS! PAGE NOT FOUND</source>
+  <target>Ups! HALAMAN TIDAK DITEMUKAN</target>
+</trans-unit>
+<trans-unit id="saa1f41ecae4a7112">
+  <source>WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND</source>
+  <target>MAAF, TAPI HALAMAN YANG ANDA MINTA TIDAK DITEMUKAN</target>
+</trans-unit>
+<trans-unit id="sc16e00a7a8b2fde2">
+  <source>Back</source>
+  <target>Kembali</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

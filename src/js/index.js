@@ -6,6 +6,7 @@ import * as bootstrap from 'bootstrap';
 import Dashboard from './ui/pages/dashboard';
 import AddPage from './ui/pages/addpage';
 import Page404 from './ui/pages/404page';
+import dropdown from './ui/component/dropdown/dropdown';
 // import footer from "./ui/component/container/footer";
 
 const routes = {
@@ -14,7 +15,10 @@ const routes = {
   '/404.html': Page404,
 };
 
-const detectRoute = () => routes[window.location.pathname];
+const detectRoute = () => {
+  const route = routes[window.location.pathname];
+  return route ? route : Page404;
+};
 
 const initPages = () => {
   document.querySelector('header');

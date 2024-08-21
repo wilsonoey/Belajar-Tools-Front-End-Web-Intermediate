@@ -8,6 +8,9 @@ class InputApp extends LitWithoutShadowDom {
       type: { type: String },
       placeholder: { type: String },
       idscss: { type: String },
+      validFeedbackMessage: { type: String, reflect: true },
+      invalidFeedbackMessage: { type: String, reflect: true },
+      required: { type: Boolean, reflect: true },
     };
   }
 
@@ -26,66 +29,30 @@ class InputApp extends LitWithoutShadowDom {
         type="${this.type}"
         placeholder="${this.placeholder}"
         id="${this.idscss}"
-        class="input-component-textinput input"
+        class="form-control input-component-textinput input"
+        ?required=${this.required}
       />
+
+      ${this._feedbackTemplate()}
     `;
+  }
+
+  _feedbackTemplate() {
+    let validFeedbackTemplate = '';
+    let invalidFeedbackTemplate = '';
+    if (this.validFeedbackMessage) {
+      validFeedbackTemplate = html`
+        <div class="valid-feedback">${this.validFeedbackMessage}</div>
+      `;
+    }
+    if (this.invalidFeedbackMessage) {
+      invalidFeedbackTemplate = html`
+        <div class="was-validated invalid-feedback">${this.invalidFeedbackMessage}</div>
+      `;
+    }
+
+    return html`${validFeedbackTemplate}${invalidFeedbackTemplate}`;
   }
 }
   
 customElements.define('input-component', InputApp);
-
-
-
-// import LitWithoutShadowDom from '../../../base/LitWithoutShadowDom';
-// import { html, nothing } from 'lit';
-
-// class InputApp extends LitWithoutShadowDom {
-//   static get properties() {
-//     return {
-//       name: { type: String, reflect: true },
-//       type: { type: String, reflect: true },
-//       placeholder: { type: String, reflect: true },
-//       idscss: { type: String, reflect: true },
-//       value: { type: String, reflect: true },
-//       required: { type: Boolean, reflect: true },
-//       validFeedbackMessage: { type: String, reflect: true },
-//       invalidFeedbackMessage: { type: String, reflect: true },
-//     };
-//   }
-
-//   constructor() {
-//     super();
-//     this.name = 'Name';
-//     this.type = 'text';
-//     this.placeholder = 'Placeholder';
-//     this.idscss = 'idscss';
-//     this.required = false;
-//   }
-  
-//   render() {
-//     return html`
-//       <span class="input-component-text"><span>${this.name}</span></span>
-//       <input
-//         type="${this.type}"
-//         placeholder="${this.placeholder}"
-//         id="${this.idscss || nothing}"
-//         class="input-component-textinput input"
-//         value=${this.value || nothing}
-//         ?required=${this.required}
-//         @input=${(e) => (this.value = e.target.value)}
-//       />
-//       ${this._validFeedbackTemplate()}
-//       <div class="invalid-feedback">${this.invalidFeedbackMessage}</div>
-//     `;
-//   }
-
-//   _validFeedbackTemplate() {
-//     if (this.validFeedbackMessage) {
-//       return html` <div class="valid-feedback">${this.validFeedbackMessage}</div> `;
-//     }
-
-//     return html``;
-//   }
-// }
-  
-// customElements.define('input-component', InputApp);

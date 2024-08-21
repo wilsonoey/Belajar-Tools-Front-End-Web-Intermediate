@@ -1,3 +1,6 @@
+@use 'vendors';
+@use 'vendors-extensions/bootstrap/components/buttons';
+
 $color-gray-800: #595959;
 $color-gray-900: #D9D9D9;
 $color-gray-black: #000000;
@@ -57,14 +60,14 @@ $space-oneandhalfunits: 24px;
 }
 
 @mixin columncenter {
-  align-items: center;
-  flex-direction: column;
+  align-items: center !important;
+  flex-direction: column !important;
 }
 
 @mixin hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(41, 20, 119, 0.9);
-  color: $color-gray-white;
+  border-color: rgba(97, 85, 141, 0.9) !important;
+  background-color: rgba(97, 85, 141, 0.9) !important;
+  color: $color-gray-white !important;
 }
 
 @mixin content {
@@ -75,8 +78,8 @@ $space-oneandhalfunits: 24px;
 }
 
 @mixin fullflex {
-  width: 100%;
-  display: flex;
+  width: 100% !important;
+  display: flex !important;
 }
 
 @mixin paddingleftandright {

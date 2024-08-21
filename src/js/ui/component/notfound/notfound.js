@@ -1,5 +1,7 @@
 import LitWithoutShadowDom from '../../../base/LitWithoutShadowDom';
 import { html } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import dropdown from '../dropdown/dropdown';
 
 class NotfoundApp extends LitWithoutShadowDom {
   static get properties() {
@@ -10,21 +12,22 @@ class NotfoundApp extends LitWithoutShadowDom {
 
   constructor() {
     super();
-    this.link = '/';
+    updateWhenLocaleChanges(this);
   }
   
   render() {
     return html`
-      <h3>OOPS! PAGE NOT FOUND</h3>
+      <h3>${msg(`OOPS! PAGE NOT FOUND`)}</h3>
       <div class="not-found-container1">
         <h1 class="not-found-text1">404</h1>
       </div>
       <div class="not-found-container2">
         <h2 class="not-found-text2">
-          WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND
+          ${msg(`WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND`)}
         </h2>
       </div>
-      <button class="return-button button" @click=${() => this._goToDashboard()}>Back</button>
+      <locale-picker class="dropdown"></locale-picker>
+      <button class="btn return-button button" @click=${() => this._goToDashboard()}>${msg(`Back`)}</button>
     `;
   }
 

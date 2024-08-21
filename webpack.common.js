@@ -61,4 +61,13 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
+  devServer: {
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/$/, to: '/index.html' },
+        { from: /^\/add-page.html/, to: '/add-page.html' },
+        { from: /./, to: '/404.html' },
+      ],
+    },
+  },
 };
